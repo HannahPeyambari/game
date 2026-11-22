@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152b">
+  <title>Twin Dash — Split-lane runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Twin Dash home"><span class="brand-mark">✦</span> TWIN<span>DASH</span></a>
+      <div class="top-note"><i></i> TWO LANE CHALLENGE</div>
+      <button id="restartTop" class="restart small" type="button">↻ <span>Restart</span></button>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">QUICK REFLEXES · DOUBLE THE FUN</div>
+      <h1>Two runners.<br><em>One big challenge.</em></h1>
+      <p>Jump the hurdles, keep both runners alive, and rack up your score.</p>
+    </section>
+
+    <section class="game-card" aria-label="Twin Dash game">
+      <div class="game-head">
+        <div class="game-title"><span class="live-dot"></span> LIVE RUN</div>
+        <div class="best">BEST <b id="bestScore">000</b></div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" aria-label="Game field. Press W or Space to jump in the upper lane, and Up Arrow to jump in the lower lane." tabindex="0"></canvas>
+        <div id="overlay" class="overlay hidden">
+          <div class="overlay-box">
+            <div class="overlay-icon">↻</div>
+            <h2>Ready for another run?</h2>
+            <p>Beat your best and keep both lanes moving.</p>
+            <button id="restartOverlay" class="restart" type="button">Play again <span>→</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="lane-footers">
+        <div class="runner-label"><span class="avatar blue">↗</span><span><b>SKY RUNNER</b><small id="skyStatus">RUNNING</small></span><strong id="skyScore">000</strong></div>
+        <div class="runner-label"><span class="avatar orange">↗</span><span><b>SUNSET RUNNER</b><small id="sunStatus">RUNNING</small></span><strong id="sunScore">000</strong></div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controls">
+      <div class="control"><kbd>W</kbd><span>or</span><kbd>SPACE</kbd><p>Jump upper lane</p></div>
+      <div class="control-divider"></div>
+      <div class="control"><kbd>↑</kbd><p>Jump lower lane</p></div>
+      <div class="control-divider"></div>
+      <div class="control"><kbd>R</kbd><p>Restart run</p></div>
+    </section>
+    <footer>Made for fast fingers and friendly rivalries <span>✦</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Unity-generated files
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Oo]bj/
+unity/[Bb]uild/
+unity/[Bb]uilds/
+unity/[Ll]ogs/
+unity/[Uu]ser[Ss]ettings/
+unity/MemoryCaptures/
+unity/.vs/
+
+# IDE files
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.user
+*.suo
